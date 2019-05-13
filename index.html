@@ -1,1 +1,116 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Резюме html-верстальщика Евгения Шадрина">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Евгений Шадрин | Резюме</title>
+  </head>
+  <body>
+    <article class="resume">
+      <h1 class="resume__title">Евгений Шадрин</h1>
+      <b class="resume__description">html-верстальщик / junior frontend разработчик</b>
+      <p class="resume__slogan">работаю с любовью</p>
+      <section class="resume__about-info about-info">
+
+        <div class="about-info__wrapper">
+          <h2 class="about-info__header">Обо мне</h2>
+          <p class="about-info__text">В мои навыки входит адаптивная, кроссбраузерная, валидная, семантичная, доступная верстка: содание сетки на flexbox-ах, адаптивной графики, стилизация с использованием препроцессора SASS/LESS, автоматизация с помощью Gulp и управление версиями посредством git, github. Добавить интерактивных элеметнов в проект мне помогают базовые знания Javascript. Я окончил <a href="http://bit.ly/2JhXyUO">курсы на LinkedIn Learning</a>  и 2 уровня интерактивных онлайн-курсов html academy "Профессиональный html и css".</p>
+          <h3 class="about-info__subheader">Мои основные навыки</h3>
+          <ul class="about-info__tech-list">
+            <li class="about-info__tech-item">html5</li>
+            <li class="about-info__tech-item">css3</li>
+            <li class="about-info__tech-item">sass/less</li>
+            <li class="about-info__tech-item">gulp/grunt</li>
+            <li class="about-info__tech-item">javascript</li>
+            <li class="about-info__tech-item">git</li>
+          </ul>
+        </div>
+
+        <div class="about-info__photo-wrapper">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/avatar-desktop@1x.jpg 1x, img/avatar-desktop@2x.jpg 2x">
+            <source media="(min-width: 1025px)" srcset="img/avatar-tablet@1x.jpg 1x, img/avatar-tablet@2x.jpg 2x">
+            <img class="about-info__photo" src="img/avatar-mobile@1x.jpg" srcset="img/avatar-mobile@2x.jpg 2x" alt="Мое фото">
+          </picture>
+        </div>
+
+        <!-- <p class="about-info__links">Все мои работы вы найдете на <a href="https://github.com/shampansky">github.com</a></p> -->
+      </section>
+
+      <section class="resume__portfolio protfolio">
+        <h2 class="protfolio__header visually-hidden">Примеры работ</h2>
+        <ul class="protfolio__projects-list">
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/mishka/">
+              <img src="img/project-mishka@1х.jpg" srcset="img/project-mishka@2х.jpg 2x" alt="Скриншот проекта Mishka">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Mishka</h3>
+              <p class="protfolio__project-description">Интернет-магазин вязаных игрушек</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная, вязание на заказ, каталог товаров; Стандарты вёрстки: HTML5, CSS3; Сетка: адаптивная на flexbox; Методология: БЭМ; Препроцессор: Sass; Инструмент автоматизации: Gulp; Валидность validator.w3.org; кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/mishka/">Перейти на страницу проекта Mishka</a>
+            </div>
+          </li>
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/artactive/">
+              <img src="img/project-artactive@1x.jpg" srcset="img/project-artactive@2x.jpg 2x" alt="Скриншот проекта Artactive">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Artactive</h3>
+              <p class="protfolio__project-description">Полиграфическая компания</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная; Стандарты вёрстки: HTML5, CSS3; Сетка: адаптивная на flexbox; Методология: БЭМ; Препроцессор: Sass; Инструмент автоматизации: Gulp; Валидность validator.w3.org; кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/artactive/">Перейти на страницу проекта Artactive</a>
+            </div>
+          </li>
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/panteon/">
+              <img src="img/project-panteon@1х.jpg" srcset="img/project-panteon@2х.jpg 2x" alt="Скриншот проекта Panteon">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Panteon</h3>
+              <p class="protfolio__project-description">Проект колонии на Марсе</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная; Стандарты вёрстки: HTML5, CSS3; Сетка: адаптивная на flexbox; Методология: БЭМ; Препроцессор: Sass; Инструмент автоматизации: Gulp; Валидность validator.w3.org; кроссбраузерность: Chrome, Firefox, Opera, Safari, Edge</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/panteon/">Перейти на страницу проекта Panteon</a>
+            </div>
+          </li>
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/nerds/">
+              <img src="img/project-nerds@1x.jpg" srcset="img/project-nerds@2x.jpg 2x" alt="Скриншот проекта Nerds">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Nerds</h3>
+              <p class="protfolio__project-description">Cайт дизайн-студии</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная, магазин; Стандарты вёрстки: HTML5, CSS3; Сетка: десктопная на flexbox; Валидность validator.w3.org; кроссбраузерность: IE11+, Edge, Chrome, Firefox, Opera, Safari</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/nerds/">Перейти на страницу проекта Nerds</a>
+            </div>
+          </li>
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/barbershop/">
+              <img src="img/project-barbershop@1х.jpg" srcset="img/project-barbershop@2х.jpg 2x" alt="Скриншот проекта Barbershop">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Barbershop</h3>
+              <p class="protfolio__project-description">Сайт салоны красоты. Для мужчин.</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная, прайс-лист, магазин, карточка товара; Стандарты вёрстки: HTML5, CSS3; Сетка: десктопная на flexbox; Валидность validator.w3.org; кроссбраузерность: IE11+, Edge, Chrome, Firefox, Opera, Safari</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/barbershop/">Перейти на страницу проекта Barbershop</a>
+            </div>
+          </li>
+
+        </ul>
+      </section>
+    </article>
+
+    <footer class="resume__footer footer">
+      <h2 class="footer__header">Спасибо за уделенное внимание</h2>
+      <a class="footer__contact-link" href="mailto:y.shadrin@gmail.com?subject=Резюме">Отправить сообщение</a>
+    </footer>
+
+  </body>
+</html>
