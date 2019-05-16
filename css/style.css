@@ -73,7 +73,7 @@ input[type="radio"].visually-hidden {
 
 .resume__description {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
   font-size: 34px;
   line-height: 40px;
   font-weight: bold; }
@@ -102,7 +102,7 @@ input[type="radio"].visually-hidden {
     font-size: 42px;
     line-height: 66px; }
   .resume__description {
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     font-size: 42px;
     line-height: 50px; }
   .resume__slogan {
