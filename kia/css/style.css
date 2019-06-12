@@ -390,7 +390,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 155px; } }
+    height: 150px; } }
 
 @media (min-width: 1278px) {
   .main-nav {
@@ -558,7 +558,7 @@ input {
   .page-header__secondary {
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
     width: 670px;
     padding-left: 30px; }
   .page-header__promo-wrapper {
