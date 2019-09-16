@@ -10,13 +10,16 @@
   <body>
     <article class="resume">
       <h1 class="resume__title">Евгений Шадрин</h1>
-      <b class="resume__description">html-верстальщик / junior frontend разработчик</b>
+      <b class="resume__description">Junior frontend разработчик</b>
       <!-- <p class="resume__slogan"></p> -->
       <section class="resume__about-info about-info">
 
         <div class="about-info__wrapper">
           <h2 class="about-info__header">Обо мне</h2>
-          <p class="about-info__text">В мои навыки входит адаптивная, кроссбраузерная, валидная, семантичная, доступная верстка: содание сетки на flexbox-ах, адаптивной графики, стилизация с использованием препроцессора SASS/LESS, автоматизация с помощью Gulp и управление версиями посредством git, github. Добавить интерактивных элеметнов в проект мне помогают базовые знания Javascript. Я окончил <a href="http://bit.ly/2JhXyUO">курсы на LinkedIn Learning</a>  и 2 уровня интерактивных онлайн-курсов html academy "Профессиональный html и css".</p>
+          <p class="about-info__text">В мои навыки входит адаптивная, кроссбраузерная, валидная, семантичная, доступная верстка: содание сетки на flexbox-ах, адаптивной графики, стилизация с использованием препроцессора SASS/LESS, автоматизация с помощью Gulp и управление версиями посредством git, github. Добавление интерактива на Javascript. Я успешно окончил курсы HTML academy Профессиональный HTML и CSS уровень 1 и 2, а также Профессиональный Javascript уровень 1. В данный момент прохожу курс The Complete JavaScript Course 2019: Build Real Projects! на Udemy для более полного понимания JS и практики на новых проектах. Ниже находятся примеры выполненных мной проектов, исходный код на <a href="https://github.com/shampansky">github.com</a>.
+          </p>
+
+          <!-- 
           <h3 class="about-info__subheader">Мои основные навыки</h3>
           <ul class="about-info__tech-list">
             <li class="about-info__tech-item">html5</li>
@@ -25,7 +28,7 @@
             <li class="about-info__tech-item">gulp/grunt</li>
             <li class="about-info__tech-item">javascript</li>
             <li class="about-info__tech-item">git</li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="about-info__photo-wrapper">
@@ -40,8 +43,32 @@
       </section>
 
       <section class="resume__portfolio protfolio">
-        <h2 class="protfolio__header visually-hidden">Примеры работ</h2>
+        <h2 class="protfolio__header">Мои работы</h2>
         <ul class="protfolio__projects-list">
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/sedona/">
+              <img src="img/project-sedona@1х.jpg" srcset="img/project-sedona@2х.jpg 2x" alt="Скриншот проекта Sedona">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Sedona</h3>
+              <p class="protfolio__project-description">Сайт туристического городка</p>
+              <p class="protfolio__project-overview">Верстка страниц: главная, оставить отзыв, фото и видео; Стандарты вёрстки: HTML5, CSS3; Сетка: адаптивная на flexbox; Методология: БЭМ; Препроцессор: Sass; Инструмент автоматизации: Gulp; Валидность validator.w3.org; кроссбраузерность: IE11, Chrome, Firefox, Opera, Safari, Edge</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/sedona/">Перейти на страницу проекта Sedona</a>
+            </div>
+          </li>
+
+          <li class="protfolio__projects-item">
+            <a href="https://shampansky.github.io/keksobooking/">
+              <img src="img/project-keksobooking@1х.jpg" srcset="img/project-keksobooking@2х.jpg 2x" alt="Скриншот проекта Keksobooking">
+            </a>
+            <div class="portfolio__description-wrapper">
+              <h3 class="protfolio__project-title">Keksobooking</h3>
+              <p class="protfolio__project-description">Сервис по аренде жилья в Токио</p>
+              <p class="protfolio__project-overview">Добавление карточки объявления и ее валидация перед отправкой на сервер, отправка и получение данных с сервера, генерация карточек объявлений на карте на основе данных с сервера, возможность их фильтрации по нескольким параметрам</p>
+              <a class="protfolio__project-link" href="https://shampansky.github.io/keksobooking/">Перейти на страницу проекта Keksobooking</a>
+            </div>
+          </li>
 
           <li class="protfolio__projects-item">
             <a href="https://shampansky.github.io/mishka/">

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <title>HTML Academy: Седона</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+  </head>
+  <body>
+    <div class="svg-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-burger" viewbox="0 0 76.166 68.959">
+  <g>
+    <path d="M71.914,46.042H4.252C1.914,46.042,0,47.955,0,50.294v3.454C0,56.086,1.914,58,4.252,58h0.956v1.037 c0,5.457,4.464,9.922,9.921,9.922h45.908c5.456,0,9.921-4.465,9.921-9.922V58h0.956c2.339,0,4.252-1.914,4.252-4.252v-3.454 C76.166,47.955,74.253,46.042,71.914,46.042z M67.958,59.037c0,3.815-3.104,6.922-6.921,6.922H15.129 c-3.816,0-6.921-3.104-6.921-6.922V58h59.75V59.037z M73.166,53.748c0,0.679-0.573,1.252-1.252,1.252H4.252 C3.573,55,3,54.427,3,53.748v-3.454c0-0.679,0.573-1.252,1.252-1.252h67.662c0.679,0,1.252,0.573,1.252,1.252V53.748z"></path>
+    <polygon points="16.162,37.856 21.635,41.856 27.112,37.856 32.591,41.856 38.069,37.856 43.548,41.856 49.026,37.856 54.505,41.856 59.985,37.856 65.474,41.856 71.842,37.212 70.074,34.788 65.474,38.144 59.985,34.144 54.505,38.144 49.026,34.143 43.548,38.144 38.069,34.143 32.591,38.144 27.112,34.143 21.636,38.144 16.163,34.142 10.686,38.144 6.093,34.789 4.323,37.211 10.686,41.856 	"></polygon>
+    <path d="M70.888,31.094c0.041-0.61,0.055-2.616,0.037-3C70.242,12.476,55.804,0,38.083,0C20.363,0,5.924,12.476,5.241,28.094 c-0.017,0.384-0.004,2.389,0.039,3H70.888z M38.083,3c16.031,0,29.15,11.154,29.842,25.094H8.241C8.933,14.154,22.051,3,38.083,3z"></path>
+    <circle cx="38.083" cy="15.042" r="2"></circle>
+    <circle cx="30.083" cy="10.083" r="2"></circle>
+    <circle cx="46.083" cy="10.083" r="2"></circle>
+  </g>
+</symbol><symbol id="icon-cross" viewbox="0 0 22.199 22.199">
+  <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "></polygon>
+</symbol><symbol id="icon-facebook" viewbox="0 0 8.672 18.944">
+  <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
+</symbol><symbol id="icon-gift" viewbox="0 0 63 75.084">
+  <path d="M60.165,22.23h-0.103H35.758c13.604-6.815,14.688-11.115,14.188-13.52c-1.145-3.916-5.604-6.938-9.848-5.341 c-5.484,2.063-7.029,10.262-8.514,16.19C29.69,13.561,27.858,5.91,23.573,2.034c-1.242-1.125-3.049-2.237-5.676-2.003 c-3.965,0.352-9.652,5.317-7.344,10.849c2.217,5.313,9.539,8.67,14.354,11.35H2.834C1.275,22.23,0,23.506,0,25.065V36.25 c0,1.559,1.275,2.834,2.835,2.834h0.27v35.999h56.958V39.084h0.104c1.561,0,2.835-1.275,2.835-2.834V25.065 C63,23.506,61.725,22.23,60.165,22.23z M41.766,5.873c2.07-0.306,4.907,1.283,5.176,3.171c0.386,2.723-3.349,5.192-5.008,6.343 c-2.484,1.723-4.853,2.611-7.178,4.006C35.628,15.748,37.268,6.539,41.766,5.873z M19.232,15.721 c-2.19-1.467-6.444-4.378-6.342-7.678c0.11-3.552,5.655-6.491,8.68-3.839c3.797,3.331,5.625,10.972,7.01,16.357 C25.381,19.042,22.35,17.808,19.232,15.721z M25.114,72.147H6.042V39.084h19.072V72.147z M25.114,36.084H3V25.23h22.114V36.084z  M35.115,72.146h-7.063V25.23h7.063V72.146z M57.125,72.147H38.053V39.084h19.072V72.147z M60,36.084H38.053V25.23H60V36.084z"></path>
+</symbol><symbol id="icon-house" viewbox="0 0 74.695 72.346">
+  <g>
+    <path d="M29.503,65.345h16V41.407h-16V65.345z M42.566,62.407H32.441V44.345h10.125V62.407z"></path>
+    <path d="M72.62,39.44l2.075-2.078l-9.907-9.913V0.47H50.974v13.161L37.349,0L0,37.363l2.077,2.078l7.832-7.832v37.799H5.971v2.938 h63.875v-2.938h-5.059v-37.8L72.62,39.44z M53.913,3.408h7.938v21.104l-7.938-7.94V3.408z M61.85,69.407H12.846V28.671 L37.348,4.169L61.85,28.671V69.407z"></path>
+    <path d="M29.753,27.21c0,4.28,3.47,7.75,7.75,7.75s7.75-3.47,7.75-7.75c0-4.279-3.47-7.75-7.75-7.75S29.753,22.93,29.753,27.21z M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.971-4.97,4.971s-4.97-2.226-4.97-4.971S34.759,22.241,37.503,22.241z"></path>
+    <rect x="16.909" y="41.407" width="3" height="3.938"></rect>
+    <rect x="22.846" y="41.407" width="3" height="3.938"></rect>
+    <rect x="16.909" y="47.407" width="3" height="3.938"></rect>
+    <rect x="22.846" y="47.407" width="3" height="3.938"></rect>
+    <rect x="48.846" y="41.407" width="3" height="3.938"></rect>
+    <rect x="54.784" y="41.407" width="3" height="3.938"></rect>
+    <rect x="48.846" y="47.407" width="3" height="3.938"></rect>
+    <rect x="54.784" y="47.407" width="3" height="3.938"></rect>
+  </g>
+</symbol><symbol id="icon-htmlacademy" viewbox="10 5 40 50">
+  <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"></path>
+</symbol><symbol id="icon-like" viewbox="0 0 22 20">
+  <g id="Core" transform="translate(-295.000000, -464.000000)">
+    <g id="thumb-up" transform="translate(295.000000, 464.000000)">
+      <path d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z"></path>
+    </g>
+  </g>
+</symbol><symbol id="icon-mail" viewbox="0 0 16 16">
+  <path d="M8,10c-0.266,0-0.5-0.094-1-0.336L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.664C8.5,9.906,8.266,10,8,10z M15,2 H1C0.45,2,0,2.45,0,3v0.758l8,4.205l8-4.205V3C16,2.45,15.55,2,15,2z"></path>
+</symbol><symbol id="icon-map-marker" viewbox="0 0 27 27">
+  <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"></circle>
+  <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"></circle>
+</symbol><symbol id="icon-menu" viewbox="0 0 22.928 21.982">
+  <g>
+    <rect width="22.928" height="3.964"></rect>
+    <rect y="9.009" width="22.928" height="3.964"></rect>
+    <rect y="18.018" width="22.928" height="3.964"></rect>
+  </g>
+</symbol><symbol id="icon-phone" viewbox="0 0 18 18">
+  <g id="Icons-Communication" transform="translate(-85.000000, -126.000000)">
+    <g transform="translate(85.000000, 126.000000)">
+      <path fill="#010101" d="M3.6,7.8C5,10.6,7.4,12.9,10.2,14.4l2.2-2.2c0.3-0.3,0.699-0.4,1-0.2c1.1,0.4,2.3,0.6,3.6,0.6 c0.6,0,1,0.4,1,1V17c0,0.6-0.4,1-1,1C7.6,18,0,10.4,0,1c0-0.6,0.4-1,1-1h3.5c0.6,0,1,0.4,1,1c0,1.2,0.2,2.4,0.6,3.6 c0.1,0.3,0,0.7-0.2,1L3.6,7.8L3.6,7.8z"></path>
+    </g>
+  </g>
+</symbol><symbol id="icon-tick" viewbox="0 0 23.049 16.249">
+  <path d="M22.801,1.299L21.75,0.248c-0.331-0.331-0.872-0.331-1.203,0L8.693,12.102L2.502,5.911c-0.331-0.331-0.872-0.331-1.203,0 L0.248,6.962c-0.331,0.331-0.331,0.872,0,1.202l7.837,7.837c0.167,0.167,0.388,0.248,0.608,0.246c0.22,0.002,0.44-0.079,0.608-0.246 l13.5-13.5C23.132,2.171,23.132,1.63,22.801,1.299z"></path>
+</symbol><symbol id="icon-twitter" viewbox="0 0 17.5 14.663">
+  <g id="W6EeEF_1_">
+    <g>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"></path>
+    </g>
+  </g>
+</symbol><symbol id="icon-video-fullscreen" viewbox="0 0 20 20">
+  <g>
+    <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"></polygon>
+    <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"></polygon>
+    <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"></polygon>
+    <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"></polygon>
+  </g>
+</symbol><symbol id="icon-video-replay" viewbox="0 0 16 20">
+  <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"></path>
+</symbol><symbol id="icon-video-subtitles" viewbox="0 0 32 20">
+  <path d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"></path>
+</symbol><symbol id="icon-youtube" viewbox="0 0 19.979 14.015">
+  <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
+</symbol></svg>
+    </div>
+    <div class="page-wrapper">
+      <header class="page-header page-header--nojs">
+        <div class="page-header__wrapper">
+          <a href="#" class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Лого Седоны">
+            </picture>
+          </a>
+          <nav class="main-nav">
+            <button class="main-nav__menu-btn" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+            <ul class="main-nav__list main-nav-list">
+              <li class="main-nav-list__item">
+                <a class="main-nav-list__link main-nav-list__link--active">Главная</a>
+              </li>
+              <li class="main-nav-list__item">
+                <a class="main-nav-list__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav-list__item">
+                <a class="main-nav-list__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav-list__item">
+                <a class="main-nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-header__intro page-header__intro--index"></div>
+      </header>
+
+      <main class="page-main">
+        <header class="main-header main-header--index">
+          <h1 class="visually-hidden">Преимущества Седоны</h1>
+          <b class="main-header__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
+          <p class="main-header__caption">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </header>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--full">
+              <div class="advantages__item-wrapper">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__header">
+                    <span class="advantages__number">№1</span> Настоящий<br> городок
+                  </h3>
+                  <p class="advantages__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg, img/main-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Фото Седоны">
+                </picture>
+              </div>
+              <ul class="advantages__features features">
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="40" height="38">
+                      <use xlink:href="#icon-house"></use>
+                    </svg>
+                  </div>
+                  <h4 class="features__header">Жилье</h4>
+                  <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="40" height="38">
+                      <use xlink:href="#icon-gift"></use>
+                    </svg>
+                  </div>
+                  <h4 class="features__header">Сувениры</h4>
+                  <p class="features__description">Не только китайского,<br> но и местного производства!</p>
+                </li>
+                <li class="features__item">
+                  <div class="features__icon">
+                    <svg width="40" height="38">
+                      <use xlink:href="#icon-burger"></use>
+                    </svg>
+                  </div>
+                  <h4 class="features__header">Еда</h4>
+                  <p class="features__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                </li>
+              </ul>
+            </li>
+            <li class="advantages__item advantages__item--full advantages__item--inverse">
+              <div class="advantages__item-wrapper">
+                <div class="advantages__item-content">
+                  <h3 class="advantages__header">
+                    <span class="advantages__number">№2</span> Там есть<br> Мост дьявола
+                  </h3>
+                  <p class="advantages__text">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+                </div>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg, img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-content">
+                <h3 class="advantages__header">
+                  <span class="advantages__number">№3</span> Небольшая<br> площадь
+                </h3>
+                <p class="advantages__text">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-content">
+                <h3 class="advantages__header">
+                  <span class="advantages__number">№4</span> Красивая<br> дорога
+                </h3>
+                <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__item-content">
+                <h3 class="advantages__header">
+                  <span class="advantages__number">№5</span> Мало<br> туристов
+                </h3>
+                <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="booking">
+          <h2 class="booking__header visually-hidden">Бронирование гостиницы</h2>
+          <h3 class="booking__title">Заинтересовались?</h3>
+          <p class="booking__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="#" class="button booking__link">Найти гостиницу</a>
+          <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-mape-mobile@2x.webp 2x">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+            <img class="booking__map-image" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Мост Дьявола">
+          </picture>
+          <iframe class="booking__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d839292.951359695!2d-112.3987003906793!3d34.74329567919537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1563266226143!5m2!1sru!2sru" allowfullscreen=""></iframe>
+
+
+        </section>
+      </main>
+
+      <footer class="page-footer">
+        <div class="page-footer__container container">
+          <p class="page-footer__hashtag hashtag">#visitsedona</p>
+          <ul class="page-footer__social social">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--twitter">
+                <span class="visually-hidden">Мы в Twitter</span>
+                <svg width="18" height="15">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--facebook">
+                <span class="visually-hidden">Мы в Facebook</span>
+                <svg width="9" height="19">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--youtube">
+                <span class="visually-hidden">Мы в Youtube</span>
+                <svg width="20" height="14">
+                  <use xlink:href="#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано</b>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="visually-hidden">HTML Academy</span>
+              <svg width="27" height="34">
+                <use xlink:href="#icon-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
