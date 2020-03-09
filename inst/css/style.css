@@ -354,6 +354,7 @@ html {
           box-sizing: border-box; }
 
 body {
+  min-width: 1176px;
   margin: 0;
   font-family: "Proxima Nova", "Arial", sans-serif;
   font-size: 18px;
@@ -395,8 +396,9 @@ input[type="radio"].visually-hidden {
   white-space: nowrap; }
 
 .wrapper {
-  width: 1146px;
-  margin: 0 auto; }
+  width: 1176px;
+  margin: 0 auto;
+  padding: 0 15px; }
 
 .title {
   padding: 0;
@@ -444,9 +446,10 @@ input[type="radio"].visually-hidden {
     background-color: #e5e5e5; }
 
 .page-header__top-wrapper {
-  width: 1146px;
+  width: 1176px;
   height: 50px;
   margin: 0 auto;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,9 +497,9 @@ input[type="radio"].visually-hidden {
   border-bottom: none; }
 
 .page-header__bottom-wrapper {
-  width: 1146px;
+  width: 1176px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
