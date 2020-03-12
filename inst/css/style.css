@@ -808,6 +808,10 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 29px; }
 
+.events__item-title a {
+  color: #373737;
+  text-decoration: none; }
+
 .events__start-wrapper {
   width: 166px; }
 
@@ -882,6 +886,9 @@ input[type="radio"].visually-hidden {
 
 .newsletter {
   background-color: #000000; }
+
+.newsletter--margin-bottom {
+  margin-bottom: 80px; }
 
 .newsletter__wrapper {
   display: -webkit-box;
@@ -1386,3 +1393,162 @@ input[type="radio"].visually-hidden {
 
 .relevant__articles {
   margin-bottom: 70px; }
+
+.management {
+  padding-bottom: 50px;
+  border-top: 1px solid #dbdbdb; }
+
+.management__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.management__item {
+  max-width: 362px;
+  margin-bottom: 40px; }
+
+.management__item-image {
+  display: block;
+  margin-bottom: 30px; }
+
+.management__item-caption {
+  margin: 0;
+  text-align: center; }
+
+.members {
+  padding-bottom: 50px;
+  border-top: 1px solid #dbdbdb; }
+
+.members__item {
+  max-width: 264px;
+  margin-bottom: 30px; }
+
+.members__item-image {
+  display: block;
+  margin-bottom: 40px; }
+
+.members__item-caption {
+  margin: 0;
+  text-align: center; }
+
+.members__pagination {
+  top: auto !important;
+  bottom: 0; }
+
+.calendar__wrapper {
+  padding: 50px 70px 44px;
+  background-color: #212121; }
+
+.calendar__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+#calendar {
+  padding-bottom: 36px; }
+  #calendar .ui-widget.ui-widget-content {
+    width: 100% !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  #calendar .ui-datepicker-group {
+    width: calc(50% - 20px); }
+  #calendar .ui-datepicker-header {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 40px; }
+  #calendar .ui-datepicker-prev {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 12px;
+    height: 24px;
+    font-size: 0;
+    color: #fff;
+    background-image: url("../../img/calendar-left.svg");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer; }
+  #calendar .ui-datepicker-next {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 12px;
+    height: 24px;
+    font-size: 0;
+    color: #fff;
+    background-image: url("../../img/calendar-right.svg");
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer; }
+  #calendar .ui-datepicker-row-break {
+    display: none; }
+  #calendar .ui-datepicker-title {
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+    font-weight: normal; }
+  #calendar .ui-state-default {
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none; }
+  #calendar td.ui-state-highlight {
+    background-color: #fff; }
+  #calendar .ui-state-highlight a {
+    color: #737373; }
+  #calendar .ui-state-disabled span {
+    color: #737373; }
+  #calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  #calendar th {
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none; }
+  #calendar td {
+    width: 14.2%;
+    height: 60px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #737373; }
+  #calendar a {
+    background-color: transparent; }
+
+.calendar__reset {
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+.calendar__apply {
+  font-size: 26px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }

@@ -15,6 +15,8 @@
       document.createElement("picture");
     </script>
     <script src="js/picturefill.js" async=""></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.css">
   </head>
   <body>
     <div class="svg-wrapper">
@@ -120,23 +122,22 @@
 
       <main class="page-main">
         <header class="main-header wrapper">
-          <h1 class="main-header__title title">Профбюро Института права</h1>
+          <h1 class="main-header__title title">Календарь мероприятий</h1>
         </header>
-
-        <section class="content wrapper">
-          <div class="content__item content__item--border">
-            <div class="content__362 content__362--left">
-              <p>Профбюро Института права занимается оказанием помощи студентам, сбором документов на различные виды стипендий, проведением культурно-массовых и спортивных мероприятий, благотворительных акций. Реализация творческого потенциала студентов — одна из основных задач нашей организации</p>
-            </div>
-
-            <div>
-              <img src="img/administration-big.jpg" alt="" style="margin-bottom: 55px;">
-              <p>На данный момент под руководством членов профбюро осуществляется работа танцевальных кружков по двум направлениям — «современные» и «народные», вокального кружка, спортивных секций по волейболу и баскетболу</p>
+        
+        <div class="calendar wrapper">
+          <div class="calendar__wrapper">
+            <div id="calendar"></div>
+            <div class="calendar__button-wrapper">
+              <button class="calendar__reset">Сбросить</button>
+              <button class="calendar__apply">Применить</button>
             </div>
           </div>
+        </div>
+        
 
-        </section>
 
+<div class="result"></div>
         <section class="events wrapper">
           <div class="events__header">
             <h2 class="events__title title">План мероприятий на 2020 год</h2>
@@ -263,89 +264,6 @@
           </ul>
         </section>
 
-        <section class="content wrapper">
-          <h2 class="title">Состав профбюро</h2>
-          <div class="union__list">
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Председатель — <a href="#">Зайкина Карина</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель председателя по общим вопросам — <a href="#">Туктамышева Аделия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель председателя, руководитель культурно-массового сектора — <a href="#">Зайцева Диана</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель руководителя культурно-массового сектора — <a href="#">Григорьева Анастасия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель спортивного сектора — <a href="#">Бикметова Дина</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель научного сектора — <a href="#">Лищенко Антон</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель социального сектора — <a href="#">Воронова Лейла</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель шефского сектора — <a href="#">Теплова Лидия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель жилищно-бытового сектора и председатель студенческого совета общежития №7 — <a href="#">Хазиева Элина</a></p>
-            </div>
-
-
-
-
-          </div>
-          <div class="union__list">
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Председатель — <a href="#">Зайкина Карина</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель председателя по общим вопросам — <a href="#">Туктамышева Аделия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель председателя, руководитель культурно-массового сектора — <a href="#">Зайцева Диана</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Заместитель руководителя культурно-массового сектора — <a href="#">Григорьева Анастасия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель спортивного сектора — <a href="#">Бикметова Дина</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель научного сектора — <a href="#">Лищенко Антон</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель социального сектора — <a href="#">Воронова Лейла</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель шефского сектора — <a href="#">Теплова Лидия</a></p>
-            </div>
-            <div class="union__item">
-              <img class="content-image union__item-image" src="img/buro-photo.jpg" alt="">
-              <p class="union__item-caption">Руководитель жилищно-бытового сектора и председатель студенческого совета общежития №7 — <a href="#">Хазиева Элина</a></p>
-            </div>
-          </div>
-        </section>
 
       </main>
       <footer class="page-footer">
@@ -422,6 +340,13 @@
 
       </footer>
 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://github.com/jquery/jquery-ui/blob/master/ui/i18n/datepicker-ru.js"></script>
+
+    <script src="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/script.js"></script>
   </body>
